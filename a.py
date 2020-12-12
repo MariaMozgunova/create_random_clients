@@ -24,9 +24,9 @@ def fibonacci_seq(n):
     return res
 
 
-def random_adress(lng, ctr):
+def random_address(lng, ctr):
     """
-    Can create adress in two languages, 
+    Can create address in two languages, 
     depending on the choice in the beginning of the program.
     """
 
@@ -61,7 +61,7 @@ def random_client(code, lng, ctr, c_c):
     birth_date = random_birth_date()
     return [
         full_name, random_phone(c_c), make_email(full_name, lng), 0, gender,
-        random_adress(lng, ctr), birth_date, random_source(lng), code, 
+        random_address(lng, ctr), birth_date, random_source(lng), code, 
         tell_age(birth_date)
     ]
 
@@ -166,7 +166,7 @@ def tkinter_input(label):
     e1.insert(0, str(randint(1, 500)))
 
     e1.grid(row=0, column=1)
-    n = 0
+    n = e1.get()
     Button(master, text='OK', command=terminate).grid(
         row=1, column=0, pady=4
     )
