@@ -7,4 +7,14 @@ This is my learning project.
 
 
 ### Tech/framework used 
-This project makes use of country-list library can choose random clients country. 
+- [tkinter](https://docs.python.org/3/library/tkinter.html "tkinter - Python interface to Tcl/Tk"). The program interacts with user by tkinter;
+- [country-list](https://pypi.org/project/country-list/ "List of all countries with names and ISO 3166-1 codes in all languages and all data formats"). The app uses it to list all countries in the chosen language;
+- [phonenumbers](https://pypi.org/project/phonenumbers/ "Python version of Google's common library for parsing, formatting, storing and validating international phone numbers"). Determines a calling code of the chosen country.
+
+
+### How to use
+1. Start the program;
+2. In the opened tkinter window choose the language and hit "Choose";
+3. Choose the country from the drop-down list and hit "Choose";
+4. Enter the number of clients to be created and hit "OK";
+5. You can now find results on the directory where the program located by the name 'random_clients.csv'.
