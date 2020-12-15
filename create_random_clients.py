@@ -142,7 +142,12 @@ def tkinter_choose_from_list(label, options):
     o = OptionMenu(master, variable, *options)
     o.grid(row=0, column=1)
 
-    button = Button(master, text="Choose", command=master.destroy, activebackground='#add8ff')
+    button = Button(
+        master, 
+        text="Choose", 
+        command=master.destroy, 
+        activebackground='#add8ff'
+    )
     button.grid(row=1, column=0, pady=4)
     master.mainloop()
 
@@ -215,10 +220,15 @@ if __name__ == '__main__':
 
         codes = fibonacci_seq(n)
         for i in range(n):
-            csv_writer.writerow(random_client(codes[i], language, country, calling_code))
+            csv_writer.writerow(random_client(
+                codes[i], 
+                language, 
+                country, 
+                calling_code
+            ))
     
     if language == 'en':
-        print('You can see now results in the file "random_clients.csv"')
+        print('You can now see the results in the file "random_clients.csv"')
     else:
         print('Вы можете посмотреть результат в файле "random_clients.csv"')
     
