@@ -15,8 +15,12 @@ This is my learning project.
 
 
 ### How to use
-1. Start the program;
-2. In the opened tkinter window choose the language and hit "Choose";
-3. Choose the country from the drop-down list and hit "Choose";
-4. Enter the number of clients to be created and hit "OK";
-5. You can now find results on the directory where the program located by the name 'random_clients.csv'.
+1. Clone this repository on your computer `git clone https://github.com/MariaMozgunova/create_random_clients.git` and `cd` into the created folder;
+2. Make the virtual environment `python -m venv venv`;
+3. Activate your virtual environment (the command depends on OS);
+4. Install packages `pip install -r requirements.txt`;
+5. Start the program;
+6. In the opened tkinter window choose the language and hit "Choose";
+6. Choose the country from the drop-down list and hit "Choose";
+8. Enter the number of clients to be created and hit "OK";
+9. You can now find results in the directory where the program located by the name 'random_clients.csv'.
